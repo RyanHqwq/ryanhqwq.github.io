@@ -26,7 +26,7 @@
        document.getElementById("nowDateTimeSpan").innerHTML=time
     },1000)
     //定义数组存储名单
-    var student = "啊，是，人，想，啊，在，额，是，在，吧，好，的，啊，的，去，啊";
+    var student = "啊,是,人,想,啊,在,额,是,在,吧,好,的,啊,的,去,啊";
    var arrs =student.split(",")
     
     //创建表格并赋值
