@@ -17,7 +17,7 @@
         </nav>
         <div class="container">
             <div class="blurb">
-                <h1>Hi there, I'm Ryan!</h1>
+                <h1>Hi, I'm Ryan!</h1>
                 <p></em> Don't trust me. <a href="/about">Read more about my life...</a></p>
             </div><!-- /.blurb -->
         </div><!-- /.container -->
@@ -28,7 +28,7 @@
             </ul>
         </footer>
     <ul>图片</ul>
-    <img src="2012101519225304.jpg"/>
+    <img src="/2012101519225304.jpg"/>
         
     </body>
 </html>
