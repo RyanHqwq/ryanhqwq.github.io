@@ -17,7 +17,7 @@
         </nav>
         <div class="container">
             <div class="blurb">
-                <h1>Hi, I'm Ryan!</h1>
+                <h1><marquee>Hi, I'm Ryan!</marquee></h1>
                 <p></em> Don't trust me. <a href="/about">Read more about my life...</a></p>
             </div><!-- /.blurb -->
         </div><!-- /.container -->
