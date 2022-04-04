@@ -22,7 +22,7 @@
             </ul>
         </footer>
     <ul>图片</ul>
-    <img src="/2012101519225304.jpg"/>
+    <img src="![图片](https://user-images.githubusercontent.com/87158581/161518911-f3cfd11b-4ec6-4572-b835-6c4ffd0d0945.png)"/>
         
     </body>
 </html>
