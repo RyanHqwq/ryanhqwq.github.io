@@ -59,7 +59,7 @@
                     y: -(step * i) - basePos,
                     speed: speed,
                     //  text : parseInt(Math.random()*10)%2 == 0 ? 0 : 1  //随机生成0或者1
-                    text: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "s", "t", "u", "v", "w", "x", "y", "z"][parseInt(Math.random() * 11)], //随机生成字母数组中的一个
+                    text: ["8", "9", "2", "5", "0", "f", ",", "(", "x", "j", "k", "l", "m", "n", "o", "p", "q", "s", "t", "u", "v", "1", "x", "y", "2"][parseInt(Math.random() * 11)], //随机生成字母数组中的一个
                     color: "rgb(" + rgbr + ',' + rgbg + ',' + rgbb + ")"
                 }
                 col.push(code);
@@ -116,5 +116,56 @@
     //开始下雨吧 GO>>
     requestAnimationFrame(codeRaining);
 </script>  
+       
+5
+        <nav>
+6
+            <ul>
+7
+                <li><a href="/">Home</a></li>
+8
+                <li><a href="/about">About</a></li>
+9
+                <li><a href="/cv">CV</a></li>
+10
+                <li><a href="/blog">Blog</a></li>
+11
+            </ul>
+12
+        </nav>
+13
+        <div class="container">
+14
+            <div class="blurb">
+15
+                <h1>Hi there, I'm Ryan!</h1>
+16
+                <p></em> Don't trust me. <a href="/about">Read more about my life...</a></p>
+17
+            </div><!-- /.blurb -->
+18
+        </div><!-- /.container -->
+19
+        <footer>
+20
+            <ul>
+21
+                <li><a href="https://www.bilibili.com">B站</a></li>
+22
+                <li><a href="https://www.baidu.com/index.php?tn=monline_3_dg">百度</a></li>
+23
+            </ul>
+24
+        </footer>
+25
+    <ul><marquee>图片</marquee></ul>
+26
+    <a href="https://user.qzone.qq.com/2563639239"><img src="http://photogz.photo.store.qq.com/psc?/V142hdH449ivyU/45NBuzDIW489QBoVep5mccmE3IUh7VhP.JtcAvUOtopThB6FGfUFUvI.XLTyfMU51zCarRBfTMo8FKghBER9GJf0miQ0Gq935Bnw4zAA8g0!/b&bo=3AVJCNwFSQgBJwA!&rf=viewer_4&t=5"width="100"></a>
+27
+        <img src="http://photonj.photo.store.qq.com/psc?/V142hdH449ivyU/45NBuzDIW489QBoVep5mcdPyEyJdS92qJob7ogkXRhMd7BVuqDaGL0bzhPFxXHJztv2UAjUA6TeykOqCl2HBP1fK988lRsamnn*qyVcWuM8!/b&bo=2wHeAdsB3gEDNxI!&rf=viewer_4&t=5"width="100">
+28
+       <img src="http://photonj.photo.store.qq.com/psc?/V142hdH449ivyU/45NBuzDIW489QBoVep5mcdPyEyJdS92qJob7ogkXRhOc*m7d82pA.Yc7wVEMdhyg5aFSre*ElWTv221nx*BeMeUQ.0IPWyOhd0tae7n0WJk!/b&bo=3AHiAdwB4gEDNxI!&rf=viewer_4&t=5"width="100">
+29
+   
 </body>
 </html>
