@@ -15,7 +15,7 @@
     <h1 style="text-align: center;" >随机点名</h1>
     <!-- 设置时间显示位置根据ID再js中调用方法显示 -->
     <div color="#33FFFF" style="text-align: right;"><span id="nowDateTimeSpan" ></span></div><br> 
-    <h1 id="show">距离2020年元旦还有：<span></span>天<span></span>小时<span></span>分<span></span>秒</h1>
+    <h1 id="show">距离高考还有：<span></span>天<span></span>小时<span></span>分<span></span>秒</h1>
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script>
