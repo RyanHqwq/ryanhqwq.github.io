@@ -1,11 +1,5 @@
 <html>
-    <head>
-        <title>Ryan</title>
-        <style>
-            
-            
-        </style>    
-    </head>
+   
     <body>
         <nav>
             <ul>
