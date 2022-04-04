@@ -24,7 +24,7 @@
        document.getElementById("nowDateTimeSpan").innerHTML=time
     },1000)
     //定义数组存储名单
-    var student = ""余明柳,
+    var student = "余明柳,
 黄小瑶,
 龙紫怡,
 谢宇轩,
@@ -78,7 +78,7 @@
 杨思瑶,
 付智豪,
 蒋熠翔,
-黄鹏"";
+黄鹏";
    var arrs =student.split(",")
     
     //创建表格并赋值
