@@ -28,7 +28,7 @@
             </ul>
         </footer>
     <ul>图片</ul>
-    <img>
+    <img src="2012101519225304.jpg"/>
         
     </body>
 </html>
