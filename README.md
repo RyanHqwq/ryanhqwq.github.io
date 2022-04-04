@@ -1,135 +1,120 @@
-
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title style="text-align: center;">随机</title>
-    <style>
-        /* 设置网页的背景颜色 */
-        body{background-color: cadetblue;}
+<html>  
+<head>   
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Code rain</title>
+    <style type="text/css">
+        html, body {
+            width: 100%;
+            height: 100%;
+        }
+        body {
+            background: #000;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+        }
     </style>
 </head>
-<body >
     
-    <!-- 设置网页的标题 -->
-    <h1 style="text-align: center;" >随机点名</h1>
-    <!-- 设置时间显示位置根据ID再js中调用方法显示 -->
-    <div color="#33FFFF" style="text-align: right;"><span id="nowDateTimeSpan" ></span></div><br> 
-    <h1 id="show">距离高考还有：<span></span>天<span></span>小时<span></span>分<span></span>秒</h1>
-</body>
-<script src="js/jquery-3.3.1.min.js"></script>
-<script>
-    //定义时间1秒刷新一次
-    setInterval(function time(){
-       let time1 =new Date
-      let time=time1.toLocaleString()
-       document.getElementById("nowDateTimeSpan").innerHTML=time
-    },1000)
-    //定义数组存储名单
-    var student = "啊,是,人,想,啊,在,额,是,在,吧,好,的,啊,的,去,啊";
-   var arrs =student.split(",")
-    
-    //创建表格并赋值
-    var j =0;
-    htmlstr="<table border=0  align=center cellspacing=10 cellpadding=3>"
-        htmlstr+="<tr>"
-        //进行循环创建表格 每排9个表格，根据arrs数组个数创建
-        for(j;j<=arrs.length-1;j++){
-            if(j%9==0){
-                htmlstr+="<tr>"
+<body>  
+<canvas id="cvs"></canvas>
+<script type="text/javascript">
+    var cvs = document.getElementById("cvs");
+    var ctx = cvs.getContext("2d");
+    var cw = cvs.width = document.body.clientWidth;
+    var ch = cvs.height = document.body.clientHeight;
+    //动画绘制对象
+    var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+    var codeRainArr = []; //代码雨数组
+    var cols = parseInt(cw / 14); //代码雨列数
+    var step = 16;    //步长，每一列内部数字之间的上下间隔
+    ctx.font = "bold 26px microsoft yahei"; //声明字体，个人喜欢微软雅黑
+  
+    function createColorCv() {
+        //画布基本颜色
+        ctx.fillStyle = "#242424";
+        ctx.fillRect(0, 0, cw, ch);
+    }
+  
+    //创建代码雨
+    function createCodeRain() {
+        for (var n = 0; n < cols; n++) {
+            var col = [];
+            //基础位置，为了列与列之间产生错位
+            var basePos = parseInt(Math.random() * 300);
+            //随机速度 3~13之间
+            var speed = parseInt(Math.random() * 10) + 3;
+            //每组的x轴位置随机产生
+            var colx = parseInt(Math.random() * cw)
+  
+            //绿色随机
+            var rgbr = 0;
+            var rgbg = parseInt(Math.random() * 255);
+            var rgbb = 0;
+            //ctx.fillStyle = "rgb("+r+','+g+','+b+")"
+  
+            for (var i = 0; i < parseInt(ch / step) / 2; i++) {
+                var code = {
+                    x: colx,
+                    y: -(step * i) - basePos,
+                    speed: speed,
+                    //  text : parseInt(Math.random()*10)%2 == 0 ? 0 : 1  //随机生成0或者1
+                    text: ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "s", "t", "u", "v", "w", "x", "y", "z"][parseInt(Math.random() * 11)], //随机生成字母数组中的一个
+                    color: "rgb(" + rgbr + ',' + rgbg + ',' + rgbb + ")"
+                }
+                col.push(code);
             }
-            htmlstr+="<td   name=strtd align=center bgcolor=cyan>"+arrs[j]+"<td>"
-        }
-        htmlstr+="<tr>"
-    htmlstr+="</table >"
-        document.write(htmlstr)
-    
-    //设置一个arrs数组长度的随机数
-    function rand(){
-       let rand= Math.random()  
-            return rand2=Math.floor(rand*arrs.length-1) 
-    }
-    rand();
-    //绑定事件
-        //开始事件
-     function kaishi(){
-         //获取开始按钮并且通过disabled来禁用多次点击
-         var dis=document.getElementById("input1")
-            dis.setAttribute("disabled","disabled")
-            //检查是否存在已经选定的表格根据是否存在ID来选择
-        var reds =document.getElementById("reds")
-        //如果存在已经变色的表格就将其变回来然后删除ID
-        if(reds!=null){
-            reds.setAttribute("bgcolor","cyan")
-            reds.removeAttribute("id")
-        }
-        //获取所有的表格元素组成数组
-         var td =document.getElementsByName("strtd")
-         //定义一个循环事件 ，随机表格颜色变色
-          one= setInterval(function(){
-             var ran=rand()
-             td[ran].setAttribute("bgcolor","red")
-            setTimeout(function(){
-             td[ran].setAttribute("bgcolor","cyan")
-            },100)
-          },100)
-    }
-        //停止事件
-    function tingzhi(){
-        //先查找是否存在已经变色的表格
-        var reds1 =document.getElementById("reds")
-        //如果存在就停止开始按钮
-        if(reds1==null){
-       clearInterval(one)
-       //同时解除开始按钮的禁用状态
-       var dis=document.getElementById("input1")
-            dis.removeAttribute("disabled")
-            //进行最后一次随机选定一个表格变色并且给该表格添加ID元素并且赋值
-       var td =document.getElementsByName("strtd")
-          one= setTimeout(function(){
-             var ran=rand()
-             td[ran].setAttribute("bgcolor","red")
-             td[ran].setAttribute("id","reds")
-          },1)
-        }else{
-            //如果存在一个选定的变色表格就说明尚未开始 发出弹窗提示
-            alert("请点击开始后再停止")
+            codeRainArr.push(col);
         }
     }
-</script>
-<body>
-    <!-- 创建按钮 -->
-    <table style="table-layout: fixed;"  width="100%" height="100%" cellspacing="0" cellpadding="2">
-        <tr></tr>
-        <tr>
-            <td align="center" >
-                <input id="input1"  onclick="kaishi()"  type="button" value="开始"  >
-                <input id="input2" onclick="tingzhi()"  type="button" value="停止"  >
-            </td>
-        </tr>
-    </table>
-    <script>
-			var show=document.getElementById("show").getElementsByTagName("span");
-			
-			setInterval(function(){
-			var timeing=new Date();
-			var time=new Date(2022,5,8,0,0,0);
-            var num=time.getTime()-timeing.getTime();
-            
-            var day=parseInt(num/(24*60*60*1000));			
-            num=num%(24*60*60*1000);
-            var hour=parseInt(num/(60*60*1000));            
-            num=num%(60*60*1000);
-            var minute=parseInt(num/(60*1000));
-            num=num%(60*1000);
-            var seconde=parseInt(num/1000);
-             
-              show[0].innerHTML=day;
-              show[1].innerHTML=hour;
-              show[2].innerHTML=minute;
-              show[3].innerHTML=seconde;
-            },100)
-              
-		</script>
+  
+    //代码雨下起来
+    function codeRaining() {
+        //把画布擦干净
+        ctx.clearRect(0, 0, cw, ch);
+        //创建有颜色的画布
+        //createColorCv();
+        for (var n = 0; n < codeRainArr.length; n++) {
+            //取出列
+            col = codeRainArr[n];
+            //遍历列，画出该列的代码
+            for (var i = 0; i < col.length; i++) {
+                var code = col[i];
+                if (code.y > ch) {
+                    //如果超出下边界则重置到顶部
+                    code.y = 0;
+                } else {
+                    //匀速降落
+                    code.y += code.speed;
+                }
+                 
+                //1 颜色也随机变化
+                //ctx.fillStyle = "hsl("+(parseInt(Math.random()*359)+1)+",30%,"+(50-i*2)+"%)"; 
+  
+                //2 绿色逐渐变浅
+                // ctx.fillStyle = "hsl(123,80%,"+(30-i*2)+"%)"; 
+  
+                //3 绿色随机
+                // var r= 0;
+                // var g= parseInt(Math.random()*255) + 3;
+                // var b= 0;
+                // ctx.fillStyle = "rgb("+r+','+g+','+b+")";
+  
+                //4 一致绿
+                ctx.fillStyle = code.color;
+  
+  
+                //把代码画出来
+                ctx.fillText(code.text, code.x, code.y);
+            }
+        }
+        requestAnimationFrame(codeRaining);
+    }
+  
+    //创建代码雨
+    createCodeRain();
+    //开始下雨吧 GO>>
+    requestAnimationFrame(codeRaining);
+</script>  
 </body>
 </html>
