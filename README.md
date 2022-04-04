@@ -10,10 +10,12 @@
     </style>
 </head>
 <body >
+    
     <!-- 设置网页的标题 -->
     <h1 style="text-align: center;" >随机点名</h1>
     <!-- 设置时间显示位置根据ID再js中调用方法显示 -->
-    <div color="#33FFFF" style="text-align: right;"><span id="nowDateTimeSpan" ></span></div><br>     
+    <div color="#33FFFF" style="text-align: right;"><span id="nowDateTimeSpan" ></span></div><br> 
+    <h1 id="show">距离2020年元旦还有：<span></span>天<span></span>小时<span></span>分<span></span>秒</h1>
 </body>
 <script src="js/jquery-3.3.1.min.js"></script>
 <script>
@@ -106,5 +108,28 @@
             </td>
         </tr>
     </table>
+    <script>
+			var show=document.getElementById("show").getElementsByTagName("span");
+			
+			setInterval(function(){
+			var timeing=new Date();
+			var time=new Date(2022,5,8,0,0,0);
+            var num=time.getTime()-timeing.getTime();
+            
+            var day=parseInt(num/(24*60*60*1000));			
+            num=num%(24*60*60*1000);
+            var hour=parseInt(num/(60*60*1000));            
+            num=num%(60*60*1000);
+            var minute=parseInt(num/(60*1000));
+            num=num%(60*1000);
+            var seconde=parseInt(num/1000);
+             
+              show[0].innerHTML=day;
+              show[1].innerHTML=hour;
+              show[2].innerHTML=minute;
+              show[3].innerHTML=seconde;
+            },100)
+              
+		</script>
 </body>
 </html>
