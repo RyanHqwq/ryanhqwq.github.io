@@ -11,7 +11,7 @@
         </nav>
         <div class="container">
             <div class="blurb">
-                <h1><marquee>Hi, I'm Ryan!龙紫怡是我妹</marquee></h1>
+                <h1><marquee>Hi, I'm Ryan!</marquee></h1>
                 <p> <a href="/about">Read more about my life...</a></p>
             </div><!-- /.blurb -->
         </div><!-- /.container -->
