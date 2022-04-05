@@ -8,7 +8,7 @@
             height: 100%;
         }
         body {
-            background: #000;
+            background: #00F;
             overflow: hidden;
             margin: 0;
             padding: 0;
@@ -43,7 +43,7 @@
     <img src="http://photonj.photo.store.qq.com/psc?/V142hdH449ivyU/45NBuzDIW489QBoVep5mcdPyEyJdS92qJob7ogkXRhMd7BVuqDaGL0bzhPFxXHJztv2UAjUA6TeykOqCl2HBP1fK988lRsamnn*qyVcWuM8!/b&bo=2wHeAdsB3gEDNxI!&rf=viewer_4&t=5" width="100">
        <img src="http://photonj.photo.store.qq.com/psc?/V142hdH449ivyU/45NBuzDIW489QBoVep5mcdPyEyJdS92qJob7ogkXRhOc*m7d82pA.Yc7wVEMdhyg5aFSre*ElWTv221nx*BeMeUQ.0IPWyOhd0tae7n0WJk!/b&bo=3AHiAdwB4gEDNxI!&rf=viewer_4&t=5" width="100">
    
-    		<h1 id="show"><marquee>距离2022高考还有：<span></span>天<span></span>小时<span></span>分<span></span>秒</marquee></h1>
+    		<h1 id="show";style="font-style: oblique;"><marquee>距离2022高考还有：<span></span>天<span></span>小时<span></span>分<span></span>秒</marquee></h1>
 		<script>			var show=document.getElementById("show").getElementsByTagName("span");
 			setInterval(function(){			var timeing=new Date();			var time=new Date(2022,5,8,0,0,0); var num=time.getTime()-timeing.getTime();
 var day=parseInt(num/(24*60*60*1000));			 num=num%(24*60*60*1000); var hour=parseInt(num/(60*60*1000)); num=num%(60*60*1000); var minute=parseInt(num/(60*1000)); num=num%(60*1000); var seconde=parseInt(num/1000);
