@@ -27,7 +27,7 @@
         </nav>
         <div class="container">
             <div class="blurb">
-                <h1>Hi , I'm Ryan!</h1>
+                <h1 style="font-style: oblique;">Hi , I'm Ryan!</h1>
                 <p><a href="/about">Read more about my life...</a></p>
             </div><!-- /.blurb -->
         </div><!-- /.container -->
