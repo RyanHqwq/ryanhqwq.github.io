@@ -53,12 +53,13 @@ background-color:Black;">
 			setInterval(function(){			var timeing=new Date();			var time=new Date(2022,5,8,0,0,0); var num=time.getTime()-timeing.getTime();
 var day=parseInt(num/(24*60*60*1000));			 num=num%(24*60*60*1000); var hour=parseInt(num/(60*60*1000)); num=num%(60*60*1000); var minute=parseInt(num/(60*1000)); num=num%(60*1000); var seconde=parseInt(num/1000);
 show[0].innerHTML=day; show[1].innerHTML=hour; show[2].innerHTML=minute; show[3].innerHTML=seconde; },100)
-
+       <div style="font:16px 宋体;width:600px;height:200px; word-spacing:5px; line-height:20px; 
+direction:rtl; overflow:auto;background-color:Yellow">
+    明月几时有？把酒问青天。不知天上宫阙、今夕是何年？我欲乘风归去，惟恐琼楼玉宇，高处不胜寒．起舞弄清影，何似在人间？　　转朱阁，低绮户，照无眠。不应有恨、何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共蝉娟。<br />
+    明月几时有？把酒问青天。不知天上宫阙、今夕是何年？我欲乘风归去，惟恐琼楼玉宇，高处不胜寒．起舞弄清影，何似在人间？　　转朱阁，低绮户，照无眠。不应有恨、何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共蝉娟。<br />
+    明月几时有？把酒问青天。不知天上宫阙、今夕是何年？我欲乘风归去，惟恐琼楼玉宇，高处不胜寒．起舞弄清影，何似在人间？　　转朱阁，低绮户，照无眠。不应有恨、何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共蝉娟。<br />
+    明月几时有？把酒问青天。不知天上宫阙、今夕是何年？我欲乘风归去，惟恐琼楼玉宇，高处不胜寒．起舞弄清影，何似在人间？　　转朱阁，低绮户，照无眠。不应有恨、何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共蝉娟。
+</div>
 		</script>
-  <div style="position:relative; top:10px;left:10px; width:140px; height:140px;
-background-color:Black;">
-	  
-	  to be a brave boy
-	  
-     </div>
+  
 </html>
