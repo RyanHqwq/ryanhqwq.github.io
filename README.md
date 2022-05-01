@@ -55,12 +55,10 @@ var day=parseInt(num/(24*60*60*1000));			 num=num%(24*60*60*1000); var hour=pars
 show[0].innerHTML=day; show[1].innerHTML=hour; show[2].innerHTML=minute; show[3].innerHTML=seconde; },100)
 
 		</script>
-</body>
-</html>
-     <div style="position:relative; top:10px;left:10px; width:140px; height:140px;
+  <div style="position:relative; top:10px;left:10px; width:140px; height:140px;
 background-color:Black;">
-             to be brave boy
-	
-	
-	
+	  
+	  to be a brave boy
+	  
      </div>
+</html>
