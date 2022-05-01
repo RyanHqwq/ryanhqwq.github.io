@@ -47,19 +47,20 @@ background-color:Black;">
     <a href="https://user.qzone.qq.com/2563639239"><img src="http://photogz.photo.store.qq.com/psc?/V142hdH449ivyU/45NBuzDIW489QBoVep5mccmE3IUh7VhP.JtcAvUOtopThB6FGfUFUvI.XLTyfMU51zCarRBfTMo8FKghBER9GJf0miQ0Gq935Bnw4zAA8g0!/b&bo=3AVJCNwFSQgBJwA!&rf=viewer_4&t=5" width="100"></a> 
     <img src="http://photonj.photo.store.qq.com/psc?/V142hdH449ivyU/45NBuzDIW489QBoVep5mcdPyEyJdS92qJob7ogkXRhMd7BVuqDaGL0bzhPFxXHJztv2UAjUA6TeykOqCl2HBP1fK988lRsamnn*qyVcWuM8!/b&bo=2wHeAdsB3gEDNxI!&rf=viewer_4&t=5" width="100">
        <img src="http://photonj.photo.store.qq.com/psc?/V142hdH449ivyU/45NBuzDIW489QBoVep5mcdPyEyJdS92qJob7ogkXRhOc*m7d82pA.Yc7wVEMdhyg5aFSre*ElWTv221nx*BeMeUQ.0IPWyOhd0tae7n0WJk!/b&bo=3AHiAdwB4gEDNxI!&rf=viewer_4&t=5" width="100">
-   
-    		<h1 id="show"><B><marquee>距离2022高考还有：<span></span>天<span></span>小时<span></span>分<span></span>秒</marquee></B></h1>
-		<script>			var show=document.getElementById("show").getElementsByTagName("span");
-			setInterval(function(){			var timeing=new Date();			var time=new Date(2022,5,8,0,0,0); var num=time.getTime()-timeing.getTime();
-var day=parseInt(num/(24*60*60*1000));			 num=num%(24*60*60*1000); var hour=parseInt(num/(60*60*1000)); num=num%(60*60*1000); var minute=parseInt(num/(60*1000)); num=num%(60*1000); var seconde=parseInt(num/1000);
-show[0].innerHTML=day; show[1].innerHTML=hour; show[2].innerHTML=minute; show[3].innerHTML=seconde; },100)
-       <div style="font:16px 宋体;width:600px;height:200px; word-spacing:5px; line-height:20px; 
+	<div style="font:16px 宋体;width:600px;height:200px; word-spacing:5px; line-height:20px; 
 direction:rtl; overflow:auto;background-color:Yellow">
     明月几时有？把酒问青天。不知天上宫阙、今夕是何年？我欲乘风归去，惟恐琼楼玉宇，高处不胜寒．起舞弄清影，何似在人间？　　转朱阁，低绮户，照无眠。不应有恨、何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共蝉娟。<br />
     明月几时有？把酒问青天。不知天上宫阙、今夕是何年？我欲乘风归去，惟恐琼楼玉宇，高处不胜寒．起舞弄清影，何似在人间？　　转朱阁，低绮户，照无眠。不应有恨、何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共蝉娟。<br />
     明月几时有？把酒问青天。不知天上宫阙、今夕是何年？我欲乘风归去，惟恐琼楼玉宇，高处不胜寒．起舞弄清影，何似在人间？　　转朱阁，低绮户，照无眠。不应有恨、何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共蝉娟。<br />
     明月几时有？把酒问青天。不知天上宫阙、今夕是何年？我欲乘风归去，惟恐琼楼玉宇，高处不胜寒．起舞弄清影，何似在人间？　　转朱阁，低绮户，照无眠。不应有恨、何事长向别时圆？人有悲欢离合，月有阴晴圆缺，此事古难全。但愿人长久，千里共蝉娟。
 </div>
+   
+    		<h1 id="show"><B><marquee>距离2022高考还有：<span></span>天<span></span>小时<span></span>分<span></span>秒</marquee></B></h1>
+		<script>			var show=document.getElementById("show").getElementsByTagName("span");
+			setInterval(function(){			var timeing=new Date();			var time=new Date(2022,5,8,0,0,0); var num=time.getTime()-timeing.getTime();
+var day=parseInt(num/(24*60*60*1000));			 num=num%(24*60*60*1000); var hour=parseInt(num/(60*60*1000)); num=num%(60*60*1000); var minute=parseInt(num/(60*1000)); num=num%(60*1000); var seconde=parseInt(num/1000);
+show[0].innerHTML=day; show[1].innerHTML=hour; show[2].innerHTML=minute; show[3].innerHTML=seconde; },100)
+       
 		</script>
   
 </html>
