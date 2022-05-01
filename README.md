@@ -57,3 +57,10 @@ show[0].innerHTML=day; show[1].innerHTML=hour; show[2].innerHTML=minute; show[3]
 		</script>
 </body>
 </html>
+     <div style="position:relative; top:10px;left:10px; width:140px; height:140px;
+background-color:Black;">
+             to be brave boy
+	
+	
+	
+     </div>
