@@ -15,7 +15,7 @@
         }
     </style>
 </head>
-    <div style="position:relative; l:10px;left:10px; width:140px; eftheight:140px;
+    <div style="position:relative; l:10px;right:10px; width:140px; eftheight:140px;
 background-color:White;">
 	    123456789
 	    
