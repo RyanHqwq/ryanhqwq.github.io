@@ -26,7 +26,7 @@ background-color:White;">
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="/about">About</a></li>
-                <li><a href="/cv">CV</a></li>
+                <li><a href="/cv">CV.</a></li>
                 <li><a href="/blog">Blog</a></li>
             </ul>
         </nav>
@@ -39,7 +39,7 @@ background-color:White;">
         <footer>
             <ul>
                 <li><a href="https://www.bilibili.com">B站</a></li>
-                <li><a href="index.html">B站</a></li>
+                <li><a href="index.html">B站.</a></li>
                 <li><a href="https://www.baidu.com/index.php?tn=monline_3_dg">百度</a></li>
             </ul>
         </footer>
