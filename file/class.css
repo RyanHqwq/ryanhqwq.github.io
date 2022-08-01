@@ -1,3 +1,12 @@
 .header{
     width:100%;
 }
+.banner{
+    transform: rotate(30deg);
+    -ms-transform: rotate(30deg); /* IE 9 */
+    -webkit-transform: rotate(30deg); /* Safari and Chrome */
+}
+.footer {
+    width: 700px;
+    margin: 0 auto;
+}
