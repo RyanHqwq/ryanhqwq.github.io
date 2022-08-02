@@ -7,26 +7,47 @@
     <!--<base href="" target="_blank">-->
     <link rel=" stylesheet" href="file/class.css" />
     <style>
-        h1{
-            text-shadow: 5px 5px 5px #1b0c26;
+        div#ix {
+            position: absolute;
+            right: 40px;
+            top: 10px;
+            width: 40px;
+            height:100%;
+            background-image: url("init/imge/bg.png");
+            box-shadow: 10px 10px 5px #808080;
         }
 
+
+        h1 {
+            text-shadow: 5px 5px 5px #ffffff;
+        }
+        a {
+            text-decoration: none
+        }
         body {
-            background-image: url("init/imge/bg.png");
-            background-size: cover;
-            background-attachment: fixed;
-          /*  filter: grayscale(100%);*/
-            background-repeat: repeat-x;
+            background-image: url("init/imge/bg.gif");
+            /*  filter: grayscale(100%);*/
+            background-repeat: repeat;
         }
     </style>
 </head>
 <body>
-
-    <h1><a href="https://ryanhqwq.github.io/home">welcome to my website</a></h1>
-    <div>
+    <div id="ix">
+        <a href="https://cloud.fynote.com/share/d/14011" target="_blank">首页</a>
+        <a href="https://cloud.fynote.com/share/d/14011" target="_blank">blog</a>
+        <a href="">学习</a>
+        <a href="http://www.runoob.com" target="_blank">笔记</a>
+        <a href="http://www.runoob.com" target="_blank">联系我</a>
+        <a href="">关于我</a>
+    </div>
+    <h1 align="center"><b><a href="https://ryanhqwq.github.io/home">welcome to my website</a></b></h1>
+    <div float：right>
         <button type="button" onclick="alert('你好世界')">点击我</button>
         <a href="http://www.runoob.com" target="_blank">工具</a><br />
     </div>
+
+
     <!--<img style="width:100%;" src="init/imge/a.jpg" />-->
 </body>
 </html>
+<!--align="center"--> 
